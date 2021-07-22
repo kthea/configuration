@@ -1,0 +1,1 @@
+-c -f bestvideo+bestaudio -o '~/documents/dl/%(title)s.%(ext)s'

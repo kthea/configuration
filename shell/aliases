@@ -1,0 +1,128 @@
+alias vi='nvim'
+alias svi='sudo nvim'
+alias yt='youtube-dl'
+alias ytv='youtube-dl -f bestvideo+bestaudio "$@"'
+alias pat='apt'
+alias spat='sudo apt'
+alias mkdir='mkdir -v'
+alias mk='mkdir'
+alias p3='python3'
+alias sp3='sudo python3'
+alias rg='ranger'
+alias srg='sudo ranger'
+alias sa='ssh-add ~/.ssh/id_rsa'
+alias nb='newsboat'
+alias k9='killall -9'
+alias top='ytop'
+alias po='systemctl poweroff -i'
+alias g11='g++ -std=c++11'
+alias sb='source ~/.bashrc'
+alias sz="source $XDG_CONFIG_HOME/zsh/.zshrc"
+alias rmd='rm -rf'
+alias rb='systemctl reboot -i'
+alias nf='neofetch'
+alias am='alsamixer'
+alias gcu='gcc -xc -std=c11 -Wall -Wextra -Werror'
+alias wtrl='curl wttr.in/lodz'
+alias wtrb='curl wttr.in/wroclaw'
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+alias ssr='sudo systemctl restart'
+alias ssrn='sudo systemctl restart NetworkManager'
+alias ssrws='sudo systemctl restart wpa_supplicant'
+alias rkt='racket'
+alias info='info --vi-keys'
+
+# some config aliases
+# apparently if I want to use variables they need to
+# be in double quotes because otherwise they do not work correctly
+alias cfa="$EDITOR $XDG_CONFIG_HOME/shell/aliases"
+alias cfz="$EDITOR $XDG_CONFIG_HOME/zsh/.zshrc"
+alias cfb="$EDITOR ~/.bashrc"
+alias cfv="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
+alias cfp="$EDITOR ~/.zprofile"
+alias cfx="$EDITOR $XDG_CONFIG_HOME/x11/xdefaults"
+alias cfs="$EDITOR $XDG_CONFIG_HOME/x11/xinitrc"
+alias cfev="$EDITOR $XDG_CONFIG_HOME/shell/variables"
+alias cffm="$EDITOR $XDG_CONFIG_HOME/ranger/rc.conf"
+alias cfwm="$EDITOR $XDG_CONFIG_HOME/herbstluftwm/autostart"
+
+# some ugly way of checking system stats
+alias cput='cpu_info.sh'
+alias fans='fan_speed.sh'
+alias ai='all_info.sh'
+alias mj='make_journal.sh'
+
+# git aliases
+alias gig="$EDITOR .gitignore"
+alias gi='git init'
+alias gm='git commit -m'
+alias gb='git branch'
+alias gc='git checkout'
+alias gs='git status'
+alias gcl='git clone'
+alias ga='git add'
+alias gps='git push'
+
+# some cd aliases that I have to use because autocd is stupid
+alias ..='cd ..'
+alias 2.='cd ../..'
+alias 3.='cd ../../..'
+alias vcf='cd $XDG_CONFIG_HOME'
+alias vdl='cd ~/docs/dl'
+alias vb='cd ~/.local/bin'
+# functions are faster but the ones here are useless
+# it was just an experiment
+vy()
+{
+cd $(fd ytdl $HOME)
+}
+vv() 
+{
+cd $(fd vids $HOME)
+}
+vm() {
+cd $(fd music $HOME)
+}
+vu() {
+cd $(fd university $HOME)
+}
+vn() {
+cd $(fd notes $HOME)
+}
+va() {
+cd $(fd analiza $HOME)
+}
+vl() {
+cd $(fd -1 logika $HOME)
+}
+vpwi() {
+cd $(fd pwi $HOME)
+}
+vwdi() {
+cd $(fd -s wdi $HOME)
+}
+vcu() {
+cd $(fd progc $HOME)
+}
+vcup() {
+cd $(fd pracownie $HOME)
+}
+
+#alias vy="cd $(fd ytdl $HOME)"
+#alias vv="cd $(fd vids $HOME)"
+#alias vm="cd $(fd music $HOME)"
+#alias vu="cd $(fd university $HOME)"
+#alias vn="cd $(fd notes $HOME)"
+#alias va="cd $(fd analiza $HOME)"
+#alias vl="cd $(fd logika $HOME)"
+#alias vpwi="cd $(fd pwi $HOME)"
+#alias vwdi="cd $(fd -s wdi $HOME)"
+#alias vcu="cd $(fd progc $HOME)"
+#alias vcup="cd $(fd pracownie $HOME)"
+
+# python aliases
+alias ea="source *env/bin/activate"
+
+# translate aliases
+alias t='trans'
+alias tbr="trans -brief :ru"
