@@ -1,1 +1,1 @@
--c -f bestvideo+bestaudio -o '~/documents/dl/%(title)s.%(ext)s'
+-c --restrict-filenames -o '~/documents/dl/%(title)s.%(ext)s'

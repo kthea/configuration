@@ -125,7 +125,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #   - true
 #   - false
 #   - ask
-config.set('content.notifications', False, 'https://poczta.onet.pl')
+config.set('content.notifications.enabled', False, 'https://poczta.onet.pl')
 
 # Allow websites to show notifications.
 # Type: BoolAsk
@@ -133,4 +133,4 @@ config.set('content.notifications', False, 'https://poczta.onet.pl')
 #   - true
 #   - false
 #   - ask
-config.set('content.notifications', False, 'https://www.reddit.com')
+config.set('content.notifications.enabled', False, 'https://www.reddit.com')

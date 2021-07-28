@@ -1,9 +1,9 @@
 alias vi='nvim'
 alias svi='sudo nvim'
 alias yt='youtube-dl'
+alias yta='youtube-dl -f bestaudio'
+alias ytdlp='yt-dlp --config-location $XDG_CONFIG_HOME/youtube-dl/config'
 alias ytv='youtube-dl -f bestvideo+bestaudio "$@"'
-alias pat='apt'
-alias spat='sudo apt'
 alias mkdir='mkdir -v'
 alias mk='mkdir'
 alias p3='python3'
@@ -16,7 +16,7 @@ alias k9='killall -9'
 alias top='ytop'
 alias po='systemctl poweroff -i'
 alias g11='g++ -std=c++11'
-alias sb='source ~/.bashrc'
+alias szp='source ~/.zprofile'
 alias sz="source $XDG_CONFIG_HOME/zsh/.zshrc"
 alias rmd='rm -rf'
 alias rb='systemctl reboot -i'
@@ -107,18 +107,6 @@ cd $(fd progc $HOME)
 vcup() {
 cd $(fd pracownie $HOME)
 }
-
-#alias vy="cd $(fd ytdl $HOME)"
-#alias vv="cd $(fd vids $HOME)"
-#alias vm="cd $(fd music $HOME)"
-#alias vu="cd $(fd university $HOME)"
-#alias vn="cd $(fd notes $HOME)"
-#alias va="cd $(fd analiza $HOME)"
-#alias vl="cd $(fd logika $HOME)"
-#alias vpwi="cd $(fd pwi $HOME)"
-#alias vwdi="cd $(fd -s wdi $HOME)"
-#alias vcu="cd $(fd progc $HOME)"
-#alias vcup="cd $(fd pracownie $HOME)"
 
 # python aliases
 alias ea="source *env/bin/activate"

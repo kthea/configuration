@@ -1,7 +1,17 @@
-export LESSHISTFILE="-"
-export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+export LESSHISTFILE="-"
+# to make coloured man pages with less and
+# not some dreary most
+#export LESS=-R
+#export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"
+#export LESS_TERMCAP_md="$(printf '%b' '[1;36m')"
+#export LESS_TERMCAP_me="$(printf '%b' '[0m')"
+#export LESS_TERMCAP_so="$(printf '%b' '[01;44;33m')"
+#export LESS_TERMCAP_se="$(printf '%b' '[0m')"
+#export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"
+#export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
 export EDITOR='nvim'
 export BLOCKSIZE='MiB'
 export TERMINAL='urxvtc'
@@ -23,7 +33,7 @@ export XINITRC="$XDG_CONFIG_HOME"/x11/xinitrc
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export PLTUSERHOME="$XDG_DATA_HOME"/racket 
 export HISTFILE="$XDG_DATA_HOME"/shell/bash_history
-export PAGER='less -r'
+export PAGER='less'
 export MAXIMA_USERDIR="$XDG_CONFIG_HOME"/maxima
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export XCOMPOSEFILE="$XDG_CONFIG_HOME/x11/xcompose"
