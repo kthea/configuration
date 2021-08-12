@@ -35,7 +35,7 @@ hc keybind $Mod-Return spawn $TERMINAL
 hc keybind $Mod-Shift-Return spawn xterm
 hc keybind $Mod-b spawn $BROWSER
 hc keybind $Mod-Shift-b spawn firefox
-hc keybind $Mod-d spawn dmenu_run -l 10 -fn "Hack Regular Nerd Font Complete"
+hc keybind $Mod-d spawn dmenu_run -b -l 10 -fn "Hack Regular Nerd Font Complete"
 hc keybind $Mod-f spawn $TERMINAL -e lf
 hc keybind $Mod-Shift-f spawn pcmanfm
 # uni keybindings

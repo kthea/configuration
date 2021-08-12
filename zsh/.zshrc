@@ -9,7 +9,6 @@ setopt correct_all
 #source /usr/share/powerline/bindings/zsh/powerline.zsh
 
 bindkey -v
-setxkbmap -option caps:swapescape
 
 HISTSIZE=1000000
 SAVEHIST=1000000
@@ -72,5 +71,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # eval "$(starship init zsh)"
 if [[ $(tty) = /dev/pts/* ]]; then
 	eval "$(starship init zsh)"
+	setxkbmap -option caps:swapescape
 	alias ls='exa -lah --icons --color=always'
 fi

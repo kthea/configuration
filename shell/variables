@@ -39,3 +39,5 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export XCOMPOSEFILE="$XDG_CONFIG_HOME/x11/xcompose"
 export XCOMPOSEFILE="$XDG_CACHE_HOME/x11/xcompose"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+#haskell variables
+export STACK_ROOT="$XDG_DATA_HOME"/stack
