@@ -1,5 +1,5 @@
-emacs/elpa
-emacs/auto-save-list
+emacs/*
+!emacs/init.el
 maxima
 GeoGebra/*
 hexchat/*

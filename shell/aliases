@@ -1,8 +1,8 @@
+#!bin/sh
 alias vi='nvim'
 alias pacman='pacman --color=always'
 alias svi='sudo nvim'
 alias grep='grep --color=always'
-alias ls='exa -lah --color=always'
 alias yt='youtube-dl'
 alias yta='youtube-dl -f bestaudio'
 alias ytdlp='yt-dlp --config-location $XDG_CONFIG_HOME/youtube-dl/config'
