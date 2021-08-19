@@ -24,7 +24,7 @@ HISTFILE=~/.cache/zsh/zsh_history
 # as it turns out though it was not a source of any problems
 
 function _fix_cursor(){
-	echo -e -n "\x1b[\x36 q" # changes to steady bar
+	echo -e -n "\x1b[6 q" # changes to steady bar
 }
 
 autoload -Uz compinit

@@ -17,13 +17,18 @@ hc set_layout grid
 # remove all existing keybindings
 hc keyunbind --all
 
-feh --bg-fill --no-fehbg $WALLPAPER &
-compton &
-
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
 Mod=Mod4   # Use the super key as the main modifier
 
+# I finally managed to set frame layout to grid 
+# on all tags and frames as per:
+# https://herbstluftwm.org/faq.html#_q_i_set_default_frame_layout_to_my_favorite_layout_but_it_doesn_8217_t_work_with_the_root_frame_existing_frames
+hc set default_frame_layout grid
+hc substitute ALGO settings.default_frame_layout \
+	foreach T tags.by-name \
+		sprintf ATTR '%c.tiling.root.algorithm' T \
+		set_attr ATTR ALGO
 #hc set layout grid
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-F1 spawn $TERMINAL -e alsamixer
@@ -169,7 +174,6 @@ hc set frame_padding 0
 hc set smart_window_surroundings 0
 hc set smart_frame_surroundings 1
 hc set mouse_recenter_gap 0
-hc set default_frame_layout grid
 hc set frame_active_opacity 1
 hc set frame_normal_opacity 1
 
