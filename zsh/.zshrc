@@ -55,22 +55,11 @@ zle -N autosuggest-accept
 # why does it not work here I do not know
 # bindkey '^\n' autosuggest-execute
 bindkey '^A'  autosuggest-accept
-# bindkey '^[M'  autosuggest-execute
-# seems that ^M was the correct option but why I have no idea
-# on WSL ^\n works, here it seemed to have worked at first
-# I truly have no idea 
-# okay it does not work either
-# bindkey '^M'  autosuggest-execute
-# but something like this dreary thing does not work bindkey '^g' autosuggest-execute
-# bindkey -s '\C\n' autosuggest-execute
-# for test with another terminal, uncomment later
 bindkey '^E' autosuggest-execute
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
-# eval "$(starship init zsh)"
 if [[ $(tty) = /dev/pts/* ]]; then
 	eval "$(starship init zsh)"
-	setxkbmap -option caps:swapescape
 	alias ls='exa -lah --icons --color=always'
 fi

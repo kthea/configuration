@@ -1,5 +1,6 @@
 #!bin/sh
 alias vi='nvim'
+alias less='less -r'
 alias pacman='pacman --color=always'
 alias svi='sudo nvim'
 alias grep='grep --color=always'

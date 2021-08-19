@@ -1,4 +1,5 @@
 feh --bg-fill --no-fehbg $WALLPAPER &
+setxkbmap -option caps:swapescape &
 xrdb -load ~/.config/x11/xdefaults &
 numlockx &
 sxhkd &
