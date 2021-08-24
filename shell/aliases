@@ -1,7 +1,6 @@
-#!bin/sh
+#!/bin/sh
 alias vi='nvim'
 alias less='less -r'
-alias pacman='pacman --color=always'
 alias svi='sudo nvim'
 alias grep='grep --color=always'
 alias yt='youtube-dl'
@@ -77,42 +76,6 @@ alias vdl='cd ~/documents/dl'
 alias vb='cd ~/.local/bin'
 # functions are faster but the ones here are useless
 # it was just an experiment
-vy()
-{
-cd $(fd ytdl $HOME)
-}
-vv() 
-{
-cd $(fd vids $HOME)
-}
-vm() {
-cd $(fd music $HOME)
-}
-vu() {
-cd $(fd university $HOME)
-}
-vn() {
-cd $(fd notes $HOME)
-}
-va() {
-cd $(fd analiza $HOME)
-}
-vl() {
-cd $(fd -1 logika $HOME)
-}
-vpwi() {
-cd $(fd pwi $HOME)
-}
-vwdi() {
-cd $(fd -s wdi $HOME)
-}
-vcu() {
-cd $(fd progc $HOME)
-}
-vcup() {
-cd $(fd pracownie $HOME)
-}
-
 # python aliases
 alias ea="source *env/bin/activate"
 

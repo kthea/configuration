@@ -30,7 +30,6 @@ let g:auto_save = 1
 " airline shape?
 let g:airline_powerline_fonts = 1
 
-let $BASH_ENV = "~/.bash_aliases"
 " have transparent terminal with dracula vim scheme
 let g:dracula_colorterm = 0
 " show hidden files in nerdtree, remember about spaces when assigning value
@@ -61,7 +60,6 @@ nnoremap <leader>c :q!<CR>
 
 " because I moved them to a place where vim does not automatically recognise them
 autocmd BufEnter xdefaults set syntax=xdefaults
-autocmd BufEnter aliases set syntax=zsh
 autocmd BufEnter variables set syntax=zsh
 " setup for C
 autocmd BufEnter *.c inoremap ,lf for<Space>(int <++> = <++>; <++> < <++>; <++> += <++>)<CR>{<CR><++><CR>}<++>

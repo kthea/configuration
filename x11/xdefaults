@@ -61,3 +61,4 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt*url-select.launcher: brave
 URxvt*url-select.underline: true
+Urxvt*blurRadius: 5

@@ -1,4 +1,6 @@
+#!/bin/sh
 feh --bg-fill --no-fehbg $WALLPAPER &
+emacs --daemon &
 setxkbmap -option caps:swapescape &
 xrdb -load ~/.config/x11/xdefaults &
 numlockx &

@@ -1,0 +1,6 @@
+font:
+  normal:
+    family: Hack Nerd Font Mono
+
+import:
+  - /home/thea/.config/alacritty/dracula.yml
