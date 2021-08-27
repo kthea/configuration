@@ -172,7 +172,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = ${colors.purple}
-label-connected = %essid%
+label-connected = connected
 
 format-disconnected =
 
