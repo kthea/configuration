@@ -59,7 +59,7 @@ alias mj='make_journal.sh'
 # git aliases
 alias gig="$EDITOR .gitignore"
 alias gi='git init'
-alias gm='git commit -m'
+alias gm='git commit -am'
 alias gb='git branch'
 alias gc='git checkout'
 alias gs='git status'
@@ -72,7 +72,7 @@ alias ..='cd ..'
 alias 2.='cd ../..'
 alias 3.='cd ../../..'
 alias vcf='cd $XDG_CONFIG_HOME'
-alias vdl='cd ~/documents/dl'
+alias vdl='cd ~/Documents/dl'
 alias vb='cd ~/.local/bin'
 # functions are faster but the ones here are useless
 # it was just an experiment
