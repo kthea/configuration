@@ -31,17 +31,17 @@ hc substitute ALGO settings.default_frame_layout \
 		set_attr ATTR ALGO
 #hc set layout grid
 hc keybind $Mod-Shift-r reload
-hc keybind $Mod-F1 spawn $TERMINAL -e alsamixer
+hc keybind $Mod-F1 spawn "$TERMINAL" -e alsamixer
 hc keybind $Mod-Shift-q close_and_remove
 hc keybind $Mod-Shift-s spawn skypeforlinux
 hc keybind $Mod-q close
 hc keybind $Mod-r remove
-hc keybind $Mod-Return spawn $TERMINAL
+hc keybind $Mod-Return spawn "$TERMINAL"
 hc keybind $Mod-Shift-Return spawn xterm
-hc keybind $Mod-b spawn $BROWSER
+hc keybind $Mod-b spawn "$BROWSER"
 hc keybind $Mod-Shift-b spawn firefox
 hc keybind $Mod-d spawn dmenu_run -b -l 10 -fn "Hack Regular Nerd Font Complete"
-hc keybind $Mod-f spawn $TERMINAL -e lf
+hc keybind $Mod-f spawn "$TERMINAL" -e lf
 hc keybind $Mod-Shift-f spawn pcmanfm
 # uni keybindings
 hc keybind $Mod-p spawn keepassxc
@@ -96,7 +96,7 @@ hc rename default "${tag_names[0]}" || true
 for i in "${!tag_names[@]}" ; do
     hc add "${tag_names[$i]}"
     key="${tag_keys[$i]}"
-    if ! [ -z "$key" ] ; then
+    if [ -n "$key" ] ; then
         hc keybind "$Mod-$key" use_index "$i"
         hc keybind "$Mod-Shift-$key" move_index "$i"
     fi

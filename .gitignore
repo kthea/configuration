@@ -1,3 +1,4 @@
+xournalpp
 emacs/*
 !emacs/init.el
 maxima
